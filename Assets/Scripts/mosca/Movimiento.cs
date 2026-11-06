@@ -11,7 +11,7 @@ public class Movimiento : MonoBehaviour
     private float movimiento;
     private float movimientovertical;
 
-    public Animator animacionMosca;
+  
 
 
 
@@ -37,7 +37,7 @@ public class Movimiento : MonoBehaviour
         movimientovertical = Input.GetAxisRaw("Vertical");
         rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, movimientovertical * velocidad);
 
-        animacionMosca.SetFloat("movimiento", velocidad);
+        
 
         // Controles invertidos
 
